@@ -1,0 +1,378 @@
+/* 크보다이아몬드  */
+@font-face {
+  font-family: "KboDiamondGothic";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff")
+    format("woff");
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* 프리텐다드 */
+/* @font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff")
+    format("woff");
+  font-weight: 300;
+  font-display: swap;
+} */
+
+/* 둥근모꼴 */
+@font-face {
+  font-family: "RoundedFixedsys";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff")
+    format("woff");
+  font-weight: normal;
+  font-display: swap;
+}
+
+.wrap {
+  width: 100%;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 45px;
+  /* background-color: #fff; */
+  display: flex;
+  justify-content: flex-end;
+  /* align-items: center; */
+  left: 60px;
+  z-index: 1000;
+}
+
+.header-inner {
+  position: fixed;
+  top: 130px;
+  right: 150px;
+  width: 260px;
+  height: 50px;
+
+  /* 글라스모피즘 핵심 */
+  background: rgba(255, 255, 255, 0.1); /* 반투명 배경 */
+  backdrop-filter: blur(20px); /* 배경 블러 효과 */
+  -webkit-backdrop-filter: blur(20px); /* 사파리 호환 */
+
+  border-radius: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* 살짝 투명한 테두리 */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gnb {
+  display: flex;
+  gap: 40px;
+}
+
+.gnb > li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-size: 24px;
+  gap: 24px;
+}
+
+/* 구분선 */
+.bit {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 60px;
+}
+
+.divider .bit img {
+  width: 65px;
+  height: 45px;
+}
+.divider {
+  display: flex;
+  align-items: center; /* 아이콘과 텍스트 세로 가운데 정렬 */
+  border-top: 1px solid #999; /* 위쪽 라인 */
+  border-bottom: 1px solid #999; /* 아래쪽 라인 */
+  padding: 8px 12px; /* 여백 */
+  font-size: 14px;
+  color: #333;
+  opacity: 80%;
+  margin: 0 auto;
+}
+.about-me {
+  font-family: "RoundedFixedsys";
+  font-size: 44px;
+}
+/* 구분선 끝 */
+
+.main {
+  position: relative;
+}
+.nav {
+  width: 1280px;
+  height: 890px;
+  /* background-color: antiquewhite; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.nav .title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 160px;
+  font-family: "KboDiamondGothic";
+}
+
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 60px;
+  width: 100%;
+  /* background-color: rgb(170, 243, 237); */
+  height: 880px;
+}
+
+.intro-text {
+  width: 100%;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 90px auto;
+}
+.intro-text p {
+  font-size: 52px;
+  line-height: 150px;
+  font-size: 90px;
+  display: flex;
+  margin-right: 120px;
+}
+
+/* 인트로끝 */
+
+.about-skill {
+  position: relative;
+}
+.edu {
+  width: 100%;
+  height: 441px;
+  /* background-color: beige; */
+  /* margin-top: 45px; */
+}
+.edu .edutitle {
+  position: relative;
+  font-size: 40px;
+  font-weight: bold;
+  color: #333;
+  opacity: 90%;
+  margin-left: 120px;
+}
+.edu .edutext {
+  position: relative;
+  font-size: 28px;
+  font-family: "Pretendard";
+  margin-left: 120px;
+}
+
+.skilltitle {
+  position: relative;
+  font-size: 40px;
+  font-weight: bold;
+  top: 45px;
+  color: #333;
+  opacity: 90%;
+  margin-left: 120px;
+}
+
+.skillimg {
+  position: relative;
+  width: 100%;
+  display: flex;
+  /* justify-content: flex-start; */
+  align-items: center;
+  gap: 36px;
+  top: 50px;
+  margin-left: 120px;
+}
+
+/* 스킬소개끝 */
+
+.about-skill {
+  position: relative;
+  display: flex;
+}
+
+.phone {
+  position: relative;
+  font-size: 40px;
+  font-weight: bold;
+  /* top: 100px; */
+  color: #333;
+  opacity: 90%;
+  margin-left: 120px;
+}
+.number {
+  position: relative;
+  font-size: 28px;
+  /* top: 100px; */
+  margin-left: 120px;
+}
+
+.grup {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  top: 100px;
+}
+
+.mail {
+  position: absolute;
+  font-size: 40px;
+  font-weight: bold;
+  color: #333;
+  right: 702px;
+  opacity: 90%;
+}
+
+.mailnum {
+  position: absolute;
+  font-size: 28px;
+}
+
+/* 번호 끝 소개끝! */
+
+/* 작업시작 */
+
+.work-section {
+  position: relative;
+}
+.section-inner {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+.video-carousel {
+  position: relative;
+}
+.videoimg {
+  position: relative;
+  width: 100%;
+  margin-bottom: 120px;
+  margin-top: 120px;
+  /* background-color: rgb(231, 255, 255); */
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.youtube {
+  position: relative;
+  width: 1100px;
+  height: 610px;
+  background-color: tomato;
+  margin-right: 120px;
+}
+
+.contest-wrap {
+  position: relative;
+  width: 100%;
+  /* background-color: rgb(231, 255, 255); */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 120px;
+  margin-top: 120px;
+}
+.contest {
+  position: relative;
+  width: 1100px;
+  height: 610px;
+  background-color: yellowgreen;
+  margin-left: 120px;
+}
+
+/* 영상 끝! */
+
+/* 이미지 롤링 무한루프 */
+.design {
+}
+.img-carousel {
+  position: relative;
+  width: 88%;
+  height: 400px;
+  background-color: #fff;
+  display: flex;
+  overflow: hidden;
+  margin-top: 120px;
+  margin-left: 90px;
+}
+.img-card-wrap {
+  position: relative;
+  display: flex;
+  padding-right: 24px;
+  gap: 24px;
+  animation: rolling 10s linear infinite;
+}
+.img-card {
+  position: relative;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  background-color: thistle;
+  border-radius: 24px;
+}
+@keyframes rolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.img-carousel:hover .img-card-wrap {
+  animation-play-state: paused;
+}
+
+/* contact */
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgb(255, 185, 185); /* 작품 자리 */
+  min-height: 500px; /* 예시 */
+  display: flex;
+  flex-direction: column;
+  margin-top: 250px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between; /* 좌/우 배치 */
+  font-size: 14px;
+  color: rgb(255, 250, 250);
+  margin-top: 600px;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column; /* 세로 줄바꿈 */
+  text-align: right;
+}
+
+section {
+  opacity: 0;
+  transition: all 1s;
+}
+
+section.show {
+  opacity: 1;
+  /* transform: translateY(0); */
+}
